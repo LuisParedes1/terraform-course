@@ -1,3 +1,9 @@
+# Ignore Terraform state files (in any folder)
 *.tfstate
+*.tfstate.*
+
+# Ignore lock files (in any folder)
 *.lock
-*.terraform
+
+# Ignore all .terraform directories recursively
+**/.terraform/
