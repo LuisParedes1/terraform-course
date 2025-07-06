@@ -3,7 +3,7 @@
 *.tfstate.*
 
 # Ignore lock files (in any folder)
-**/*.lock
+**/.terraform.lock.hcl
 
 # Ignore all .terraform directories recursively
 **/.terraform/
