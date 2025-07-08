@@ -6,7 +6,7 @@ provider "aws" {
 
 # DB server EC2 instance
 resource "aws_instance" "dbServer" {
-  ami           = "ami-068990796e29243d5"
+  ami           = "ami-05ffe3c48a9991133"
   instance_type = "t2.micro"
 
   tags = {
