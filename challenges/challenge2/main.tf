@@ -32,6 +32,7 @@ resource "aws_instance" "webServer" {
   }
 
   # bootstrap process
+  # https://cloudkatha.com/how-to-execute-ec2-user-data-script-using-terraform/
   user_data = <<EOF
     #!/bin/bash
     sudo yum update
