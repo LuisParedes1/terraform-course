@@ -1,14 +1,3 @@
-variable "ingress" {
-  type    = list(number)
-  default = [80, 443]
-}
-
-
-variable "egress" {
-  type    = list(number)
-  default = [80, 443]
-}
-
 # Web server security group with inbound rules for opening port 80 (HTTP) and port 443 (HTTPS)
 resource "aws_security_group" "web_traffic" {
   name = "opening ports"
