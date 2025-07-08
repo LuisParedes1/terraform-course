@@ -23,7 +23,7 @@ output "dbServerPrivateIP" {
 
 # Web server EC2 instance
 resource "aws_instance" "webServer" {
-  ami             = "ami-068990796e29243d5"
+  ami             = "ami-05ffe3c48a9991133"
   instance_type   = "t2.micro"
   security_groups = [aws_security_group.web_traffic.name]
 
