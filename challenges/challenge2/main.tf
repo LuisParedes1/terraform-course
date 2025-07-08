@@ -39,7 +39,11 @@ resource "aws_instance" "webServer" {
     sudo systemctl start httpd
     sudo systemctl enable httpd
     echo "<h1>Hello from Terraform</h1>" | sudo tee /var/www/html/index.html
-  EOF   
+  EOF
+
+  /* We can also read directly from a file
+  user_data = file("filename")
+  */
 }
 
 # Elastic IP address for Web server EC2 instance
