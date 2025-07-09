@@ -9,3 +9,6 @@ module "db" {
   server_names  = ["mariadb", "mysql", "mssql"]
 }
 
+output "serversPrivateIP" {
+  value = module.db.dbServerPrivateIP
+}
