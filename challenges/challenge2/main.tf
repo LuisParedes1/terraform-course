@@ -34,13 +34,13 @@ resource "aws_instance" "webServer" {
   # bootstrap process
   # https://cloudkatha.com/how-to-execute-ec2-user-data-script-using-terraform/
   user_data = <<EOF
-    #!/bin/bash
-    sudo yum update
-    sudo yum install -y httpd
-    sudo systemctl start httpd
-    sudo systemctl enable httpd
-    echo "<h1>Hello from Terraform</h1>" | sudo tee /var/www/html/index.html
-  EOF
+#!/bin/bash
+sudo yum update
+sudo yum install -y httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
+echo "<h1>Hello from Terraform</h1>" | sudo tee /var/www/html/index.html
+EOF
 
   /* We can also read directly from a file
   user_data = file("filename")
