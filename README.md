@@ -28,7 +28,7 @@ resource "aws_vpc" "main" {
 }
 ```
 
-Terraform language [documentation](https://developer.hashicorp.com/terraform/language)
+See Terraform language [documentation](https://developer.hashicorp.com/terraform/language)
 
 # Terraform config files
 
